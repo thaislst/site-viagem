@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    border: 0;
+    background-color: #fb9300;
+    width: 35%;
+    margin-top: 20px;
+    box-shadow: 0 9px 8px -3px rgb(64 60 67 / 24%), 8px 0 8px -7px rgb(64 60 67 / 24%), -8px 0 8px -7px rgb(64 60 67 / 24%);
+}
+
+header {
+    height: 100vh;
+    background: no-repeat center/cover url("assets/header1.jpg")
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 15px;
+    color: white;
+}
+
+header nav p {
+    font-weight: bold;
+    color: black;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+.header-content {
+    text-align: center;
+    margin: 80px auto;
+    max-width: 500px;
+    color: white;
+}
+
+.header-content h1 {
+    margin-top: 30%;
+    margin-bottom: 10px;
+    font-size: 3.5rem;
+}
+
+.pacotes {
+    background: #e8eaed;
+}
+
+.pacotes .pacotes-cards {
+    display: flex;
+    max-width: 950px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pacotes .pacotes-title {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 25px 0;
+    color: #2f363e;
+}
+
+.pacotes .card {
+    width: 250px;
+    height: 350px;
+    background: white;
+    border-radius: 24px 0;
+    margin: 25px 25px 90px 25px;
+    position: relative;
+    box-shadow: 0 9px 8px -3px rgb(64 60 67 / 24%), 8px 0 8px -7px rgb(64 60 67 / 24%), -8px 0 8px -7px rgb(64 60 67 / 24%);
+}
+
+.pacotes .card .card-image {
+    width: 250px;
+    height: 200px;
+    border-radius: 24px 0 0 0;
+    object-fit: cover;
+}
+
+.pacotes .card-content {
+    padding: 0 15px;
+}
+
+.pacotes .card-content ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.pacotes .card-content ul li {
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+    color: gray;
+}
+
+.pacotes .card-content li svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.pacotes .card-content h1 {
+    font-size: 1rem;
+    margin: 8px 0.5px;
+    color: #2f363e;
+}
+
+.pacotes .card .card-tag-top {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    border-radius: 8px 0 0 8px;
+    background: #fb9300;
+    padding: 5px 10px;
+}
+
+.pacotes .card .card-tag-bottom {
+    position: absolute;
+    left: 0;
+    top: 150px;
+    border-radius: 0 8px 8px 0;
+    background: #df5f44;
+    padding: 5px 10px;
+}
+
+.pacotes .card .card-tag p {
+    margin: 0;
+    font-size: .8rem;
+    color: white;
+    font-weight: bold;
+}
+
+.servicos .servicos-title {
+    margin: 35px 0;
+    text-align: center;
+    color: #2f363e;
+}
+
+.servicos .servicos-card {
+    margin-top: 25px;
+    max-width: 950px;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.servicos .card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+.servicos .card svg {
+    width: 60px;
+    height: 60px;
+    color: #1d3d3fd3;
+    margin-bottom: 30px;
+    transition: all 1s;
+}
+
+.servicos .card svg:hover {
+    stroke: #df5f44;
+    transform: scale(1.1);
+}
+
+.servicos .card h3 {
+    color: #2f363e;
+}
+
+.servicos .card p {
+    text-align: center;
+    color: #2f363e;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.servicos .card .card-content {
+    height: 180px;
+    text-align: center;
+}
+
+.servicos .card button {
+    padding: 0;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    border: 0;
+    background-color: #fb9300;
+    width: 50%;
+    height: 30px;
+}
+
+.contato {
+    background: #e8eaed;
+    padding: 60px;
+    display: flex;
+    position: relative;
+}
+
+.contato .contato-card {
+    width: 350px;
+    height: 300px;
+    background: floralwhite;
+    position: absolute;
+    z-index: 99;
+    top: calc(50% - 150px);
+    left: calc(20% - 175px);
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 9px 8px -3px rgb(64 60 67 / 24%), 8px 0 8px -7px rgb(64 60 67 / 24%), -8px 0 8px -7px rgb(64 60 67 / 24%);
+}
+
+.contato .contato-card h1 {
+    font-size: 1.4rem;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.contato .contato-card li {
+    font-size: .8rem;
+    color: gray;
+    display: flex;
+    align-items: center;
+}
+
+.contato .contato-card li svg {
+    width: 20px;
+    margin: 0 10px 10px 0;
+}
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+    padding: 60px;
+    box-shadow: 0 9px 8px -3px rgb(64 60 67 / 24%), 8px 0 8px -7px rgb(64 60 67 / 24%), -8px 0 8px -7px rgb(64 60 67 / 24%);
+}
+
+
+/* RESPONSIVIDADE */
+
+
+/* Landscape especial para mapa*/
+
+@media (max-width: 950px) {
+    .contato {
+        padding: 60px 0;
+    }
+    .contato .contato-card {
+        left: 40px;
+    }
+}
+
+@media (max-width: 800px) {
+    .contato {
+        padding: 60px 0;
+    }
+    .contato {
+        padding: 0 0 60px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contato .contato-card {
+        position: static;
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 98;
+    }
+}
+
+
+/* Landscape phone to portrait tablet */
+
+
+/* @media (max-width: 767px) */
+
+
+/* Landscape phones and down */
+
+@media (max-width: 480px) {
+    body {
+        margin-bottom: 55px;
+    }
+    header nav ul {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background: #183b3d;
+        color: white;
+        font-weight: bold;
+        height: 55px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 99;
+    }
+    header nav p {
+        width: 100%;
+        text-align: center;
+        color: black;
+    }
+    #map {
+        position: static;
+    }
+}
+
+
+/* Portrait tablet to landscape and desktop */
+
+
+/* @media (min-width: 768px) and (max-width: 979px) { ... }*/
+
+
+/* Large desktop */
+
+
+/* @media (min-width: 1200px) { ... }*/
